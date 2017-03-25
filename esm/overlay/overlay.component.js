@@ -208,7 +208,7 @@ ModalOverlay = __decorate([
             '(body:keydown)': 'documentKeypress($event)'
         },
         encapsulation: ViewEncapsulation.None,
-        template: "<template #innerView></template>\n<template #template let-ctx>\n    <template [swapCmp]=\"ctx.component\" [swapCmpBindings]=\"ctx.bindings\" [swapCmpProjectables]=\"ctx.projectableNodes\"></template>\n</template>\n"
+        template: "<ng-template #innerView></ng-template>\n<ng-template #template let-ctx>\n    <ng-template [swapCmp]=\"ctx.component\" [swapCmpBindings]=\"ctx.bindings\" [swapCmpProjectables]=\"ctx.projectableNodes\"></ng-template>\n</ng-template>\n"
     }),
     __metadata("design:paramtypes", [DialogRef,
         ViewContainerRef,

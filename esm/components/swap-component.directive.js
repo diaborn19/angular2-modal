@@ -8,8 +8,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 import { Directive, Input, Output, ReflectiveInjector, ViewContainerRef, ComponentFactoryResolver, EventEmitter, TemplateRef, Injector } from '@angular/core';
-// <template [dynCmp]="myCmp" [dynCmpBindings]="myBindings"></template>
-// <template [dynCmp]="ctx.component" [dynCmpBindings]="ctx.bindings" [dynCmpProjectables]="ctx.projectableNodes"></template>
+// <ng-template [dynCmp]="myCmp" [dynCmpBindings]="myBindings"></ng-template>
+// <ng-template [dynCmp]="ctx.component" [dynCmpBindings]="ctx.bindings" [dynCmpProjectables]="ctx.projectableNodes"></ng-template>
 var SwapComponentDirective = (function () {
     function SwapComponentDirective(cfr, vcRef, tRef) {
         this.cfr = cfr;

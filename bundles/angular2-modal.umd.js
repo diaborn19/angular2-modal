@@ -751,8 +751,8 @@
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function")
             return Reflect.metadata(k, v);
     };
-    // <template [dynCmp]="myCmp" [dynCmpBindings]="myBindings"></template>
-    // <template [dynCmp]="ctx.component" [dynCmpBindings]="ctx.bindings" [dynCmpProjectables]="ctx.projectableNodes"></template>
+    // <ng-template [dynCmp]="myCmp" [dynCmpBindings]="myBindings"></ng-template>
+    // <ng-template [dynCmp]="ctx.component" [dynCmpBindings]="ctx.bindings" [dynCmpProjectables]="ctx.projectableNodes"></ng-template>
     exports.SwapComponentDirective = (function () {
         function SwapComponentDirective(cfr, vcRef, tRef) {
             this.cfr = cfr;
@@ -1225,7 +1225,7 @@
                 '(body:keydown)': 'documentKeypress($event)'
             },
             encapsulation: _angular_core.ViewEncapsulation.None,
-            template: "<template #innerView></template>\n<template #template let-ctx>\n    <template [swapCmp]=\"ctx.component\" [swapCmpBindings]=\"ctx.bindings\" [swapCmpProjectables]=\"ctx.projectableNodes\"></template>\n</template>\n"
+            template: "<ng-template #innerView></ng-template>\n<ng-template #template let-ctx>\n    <ng-template [swapCmp]=\"ctx.component\" [swapCmpBindings]=\"ctx.bindings\" [swapCmpProjectables]=\"ctx.projectableNodes\"></ng-template>\n</ng-template>\n"
         }),
         __metadata$2("design:paramtypes", [DialogRef,
             _angular_core.ViewContainerRef,

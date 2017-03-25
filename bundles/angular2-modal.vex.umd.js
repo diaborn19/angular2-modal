@@ -68,7 +68,7 @@
         _angular_core.Component({
             selector: 'modal-dialog',
             encapsulation: _angular_core.ViewEncapsulation.None,
-            template: "<form class=\"vex-dialog-form\">\n    <template [swapCmp]=\"context.content\"></template>\n    <vex-dialog-buttons [buttons]=\"context.buttons\"\n                        (onButtonClick)=\"onButtonClick($event)\"></vex-dialog-buttons>\n</form>"
+            template: "<form class=\"vex-dialog-form\">\n    <ng-template [swapCmp]=\"context.content\"></ng-template>\n    <vex-dialog-buttons [buttons]=\"context.buttons\"\n                        (onButtonClick)=\"onButtonClick($event)\"></vex-dialog-buttons>\n</form>"
         }),
         __metadata$1("design:paramtypes", [angular2Modal.DialogRef])
     ], exports.DialogFormModal);
